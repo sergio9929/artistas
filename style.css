@@ -39,70 +39,6 @@ html, body {
 }
 
 
-/* INICIO DE NAV */
-nav{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    display: flex;
-    height: 50px;
-    background: black;
-    /* border-bottom: 1px solid rgba(255, 255, 255, .2); */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px;
-    z-index: 10000;
-}
-
-.izquierda{
-    justify-content: center;
-    display: flex;
-}
-
-.izquierda>a{
-    padding: 0px 15px;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    transition: background-color .25s, color .25s;
-}
-
-.izquierda>a:hover, .izquierda>a.current{
-    background: white;
-    color: black;
-}
-
-.derecha{
-    display: flex;
-}
-
-.buscador{
-    padding-left: 15px;
-    width: 300px;
-    height: 25px;
-    background: black;
-    margin-right: 25px;
-    color: white;
-    outline: none;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-
-.buscador:focus{
-    outline: none;
-    border: none;
-}
-
-.derecha a{
-    text-decoration: none;
-    color: white;
-}
-/* FIN DE NAV */
-
-
 /* INICIO DE GRID */
 .grid {
     display: grid;
@@ -243,35 +179,6 @@ nav{
 }
 /* FIN DE DIV */
 
-
-/* INICIO DE FOOTER */
-footer{
-    height: 200px;
-}
-
-footer p{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-footer .iconos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.circulo{
-    width: 25px;
-    height: 25px;
-    background: white;
-    border-radius: 100%;
-    margin: 10px 5px;
-}
-/* FIN DE FOOTER */
-
-
 @media(max-width: 768px){
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -317,34 +224,7 @@ footer .iconos{
 
 
 @media(max-width: 576px){
-
-    /* INICIO DE NAV */
-    nav{
-        height: 40px;
-        padding: 0px 20px;
-    }
-    /* FIN DE NAV */
-
     .grid {
         margin-top: -10vw;
     }
-
-
-    /* INICIO DE FOOTER */
-    footer{
-        height: 50vw;
-    }
-    
-    footer p{
-        font-size: 3vw;
-        margin-top: 5vw;
-    }
-    
-    .iconos>.circulo{
-       background: white;
-        margin: 3vw 1vw;
-        width: 5vw;
-        height: 5vw;
-    }
-    /* FIN DE FOOTER */
 }
